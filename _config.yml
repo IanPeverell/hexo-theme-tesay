@@ -1,0 +1,28 @@
+# basic
+title: Ian He's Blog
+subtitle: 静静地旁观，默默地思考，然后开心的笑笑，就好了
+favicon: avator.png
+
+avatar: images/avatar.png
+banner_small: images/banner-small.png
+banner_large: images/banner-large.png
+small_kitty: images/small-kitty.png
+
+
+# social
+social:
+  github: https://github.com/IanPeverell
+  twitter: https://twitter.com/IanPeverell
+
+# nav #
+nav:
+  home: .
+  archive: archives
+  tags: tags
+  about: about
+
+# heox-renderre-sass
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false

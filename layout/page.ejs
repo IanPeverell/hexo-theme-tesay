@@ -1,0 +1,24 @@
+<main class="page">
+  <div>
+    <% if (page.path === "about/index.html"){ %>
+      <div >
+        <p id="animated_div"><img src="<%- url_for(theme.small_kitty)%>" width="89" height="129"/></p>
+      </div>
+      <%- page.content %>
+    <% } else { %>
+      <div>
+        <h1>Tags</h1>
+      </div>
+      <div class="tags">
+        <%- tagcloud({
+          min_font: 16,
+          max_font: 35,
+          amount: 999,
+          color: true,
+          start_color: 'gray',
+          end_color: 'black',
+        }) %>
+      </div>
+    <% } %>
+  </div>
+</main>
