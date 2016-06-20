@@ -2,8 +2,6 @@ var app = (function () {
   var loadBanner = function () {
     var bannerSmall = document.querySelector('.banner-small')
 
-    // can't just listen the bannerSmall's load event
-    // but why ?
     var img = new Image()
     img.src = bannerSmall.src
     img.addEventListener('load', function (e) {
