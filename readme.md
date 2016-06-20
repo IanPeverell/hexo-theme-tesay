@@ -2,8 +2,8 @@
 ---
 [Sample](ianpeverell.github.io)
 
-Usage
-
+#Usage
+---
 * In the ```themes/``` folder:
 
 ```git clone https://github.com/DrakeLeung/hexo-theme-again.git again```
@@ -19,6 +19,6 @@ theme: tesay```
 
 
 
-License
+#License
 ---
 MIT
