@@ -1,5 +1,4 @@
 # Hexo-theme-tesay
-[Sample](ianpeverell.github.io)
 
 #Usage
 * In the ```themes/``` folder:
