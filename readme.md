@@ -1,6 +1,11 @@
 # Hexo-theme-tesay
 
-#Usage
+# Example
+
+[My Blog](https://ianpeverell.github.io)
+
+# Usage
+
 * In the ```themes/``` folder:
 
 ```git clone https://github.com/DrakeLeung/hexo-theme-again.git again```
@@ -15,6 +20,5 @@
 theme: tesay```
 
 
-
-#License
+# License
 MIT
