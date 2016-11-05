@@ -2,14 +2,15 @@
   <div>
     <% if (page.path === "about/index.html"){ %>
       <div >
-        <div >
-          <img src="<%- url_for(theme.small_kitty)%>" width="89" height="129" id="animated_div_left"/>
-          <img src="<%- url_for(theme.small_kitty)%>" width="89" height="129"/>
-          <img src="<%- url_for(theme.small_kitty)%>" width="89" height="129" id="animated_div_right"/>
-        </div>
+        <img src="<%- url_for(theme.small_kitty)%>" width="89" height="129" id="animated_div_left"/>
+        <img src="<%- url_for(theme.small_kitty)%>" width="89" height="129"/>
+        <img src="<%- url_for(theme.small_kitty)%>" width="89" height="129" id="animated_div_right"/>
       </div>
-      <%- page.content %>
-    <% } else { %>
+      <div>
+        <%- page.content %>
+      </div>
+    <% } %>
+    <% if (page.path === "tags/index.html"){ %>
       <div>
         <h1>Tags</h1>
       </div>

@@ -1,0 +1,56 @@
+button {
+    position: relative;
+    display: block;
+    margin: 8px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    letter-spacing: .2em;
+    font-family: $font-sans;
+    font-size: $nav-font-size;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 2px;
+    text-align: center;
+    align-items: flex-start;
+    background-color: inherit;
+}
+
+.ripple {
+  position: absolute;
+  background: rgba(0,0,0, 0.15);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.ripple.show {
+  animation: ripple .75s ease-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.cover {
+  position: absolute;
+  background: rgba(0,0,0, 0.15);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.cover.show {
+  animation: cover .75s ease-out;
+}
+
+@keyframes cover {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

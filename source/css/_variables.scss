@@ -7,6 +7,8 @@ $gutter: 15px;
 
 $root-font-size: 16px;
 $body-font-size: 1rem;
+$nav-font-size: 12px;
+
 
 
 //
@@ -28,13 +30,18 @@ $archive-main-width: 500px;
 $archive-gutter: 2 * $gutter;
 $page-nav-font-size: 1.25rem;
 
+$shadow-blur: 2px;
+$shadow-radius: 1px;
+
+$card-border-radius: 2px;
+
 //
 // article
 //
 $article-line-height: 1.7;
 $article-date-color: #aaa;
 $article-gutter: 3 * $gutter;
-$anchor-color: #5badf0;
+$anchor-color: #1fbcd2;
 
 //
 // sharing

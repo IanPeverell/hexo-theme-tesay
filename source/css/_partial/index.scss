@@ -1,45 +1,72 @@
 main.index {
-  max-width: $main-content-width;
-  margin: 0 auto;
-  padding: $gutter;
+    max-width: $main-content-width;
+    margin: 0 auto;
+    padding: $gutter;
 
-  article {
-    // border-top: 1px solid $article-border-color;
-    margin-top: $article-gutter;
-  }
-
-  .article-entry {
-    padding: $gutter 0 2*$gutter 0;
-  }
-
-  .article-title {
-    margin: 0;
-    padding-top: $article-gutter * 2/3;
-    text-transform: capitalize;
-    font-size: 1.75rem;
-  }
-
-  .article-date {
-    color: $article-date-color;
-  }
-
-  .page-nav {
-    text-align: center;
-    margin-top: $article-gutter;
-    font-size: $page-nav-font-size;
-
-    .page-number {
-      padding: $gutter / 3;
-      color: $anchor-color;
-    }
-    .current {
-      // color: $page-nav-current-page;
-      color: inherit;
+    article {
+        // border-top: 1px solid $article-border-color;
+        margin-top: $gutter * 1.5;
+        box-shadow: 0 0 $shadow-blur $shadow-radius #bdbdbd;
+        border-radius: $card-border-radius;
     }
 
-    .extend {
-      padding: 0 $gutter;
-      color: $anchor-color;
+    .article-entry {
+        padding: $gutter;
     }
-  }
+
+   .article-title {
+        margin: 0;
+        background-color: $anchor-color;
+        text-transform: capitalize;
+        font-size: 1.75rem;
+        font-weight: normal;
+        letter-spacing: 0.05em;
+        color: #fff;
+        box-shadow: 0 0 $shadow-blur $shadow-radius #bdbdbd;
+        border-top-left-radius: $card-border-radius;
+        border-top-right-radius: $card-border-radius;
+    }
+
+    .article-title > a {
+         width: 100%;
+         height: 100%;
+         padding: $gutter * 1.5;
+         display: inline-block
+    }
+
+    .article-title > a > button{
+          padding: 0;
+    }
+
+    .article-meta {
+         padding-left: $gutter;
+         padding-bottom: $gutter * 0.5;
+    }
+
+    .article-date {
+        color: $article-date-color;
+    }
+
+    .page-nav {
+        width: 100%;
+        text-align: center;
+        margin: $article-gutter auto;
+        font-size: $page-nav-font-size;
+        display: inline-block;
+
+        .page-number {
+            padding: $gutter / 3;
+            color: $anchor-color;
+        }
+
+        .current {
+            // color: $page-nav-current-page;
+            color: inherit;
+        }
+
+        .extend {
+            padding: 0 $gutter;
+            color: $anchor-color;
+        }
+    }
 }
