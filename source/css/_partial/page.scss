@@ -32,16 +32,30 @@
 }
 
 .tags a {
-    margin-right: 1em;
-    line-height: 65px;
-    border-bottom: 1px solid gray;
+    border: 10px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+    margin: 7px;
+    outline: none;
+    font-size: inherit;
+    background-color: #ffd54f;
+    border-radius: 1em;
     white-space: nowrap;
-    transition: border-bottom .5s;
+    width: -webkit-fit-content;
+    box-shadow: 0px 0px 3px 2px #bdbdbd;
+    overflow: hidden;
+    letter-spacing: 0.2em;
+    font-weight: bold;
 }
 
 .tags a:hover {
-    border-bottom: 3px dotted gray;
-    text-decoration: none;
+    background-color: #fff;
 }
 
 #animated_div_left

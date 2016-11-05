@@ -13,6 +13,9 @@
 
     .active {
         background-color: $anchor-color;
+    }
+
+    .active > button {
         color: #fff;
     }
 }

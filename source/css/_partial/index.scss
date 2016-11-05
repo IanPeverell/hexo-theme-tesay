@@ -12,6 +12,7 @@ main.index {
 
     .article-entry {
         padding: $gutter;
+        padding-left: $gutter * 3;
     }
 
    .article-title {
@@ -39,7 +40,7 @@ main.index {
     }
 
     .article-meta {
-         padding-left: $gutter;
+         padding-left: $gutter * 6;
          padding-bottom: $gutter * 0.5;
     }
 
@@ -55,8 +56,19 @@ main.index {
         display: inline-block;
 
         .page-number {
-            padding: $gutter / 3;
+            width: 2em;
             color: $anchor-color;
+            display: inline-block;
+            border: none;
+            outline: none;
+            letter-spacing: .2em;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+            border-radius: 2px;
+            text-align: center;
+            align-items: flex-start;
+            background-color: inherit;
         }
 
         .current {
